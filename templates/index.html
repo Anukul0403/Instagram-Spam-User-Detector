@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Spam Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Instagram Spam Detector</h1>
+    <form action="{{url_for('predict')}}" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Instagram Link</label>
+          <input name="link" type="text" class="form-control" id="exampleInputEmail1" placeholder="link">
+        </div>
+        
+        <button type="submit" class="btn btn-default">Predict</button>
+      </form>
+</body>
+</html>
